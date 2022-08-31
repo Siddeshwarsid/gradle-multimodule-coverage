@@ -1,0 +1,12 @@
+apply plugin: "org.sonarqube"
+
+sonarqube {
+    properties {
+        // Insert other SonarQube properties here
+        property 'sonar.projectName', 'gradle-multimodule-coverage'
+        property 'sonar.projectKey', 'gradle-multimodule-coverage'
+        property 'sonar.host.url', 'http://54.242.126.15:9000'
+        property 'sonar.login', 'admin'
+        property 'sonar.password', 'sonar'
+    }
+}
