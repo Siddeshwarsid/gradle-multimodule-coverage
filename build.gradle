@@ -17,7 +17,7 @@ subprojects {
     apply plugin: 'org.sonarqube'
     sonarqube {
         properties {
-            property 'sonar.coverage.jacoco.xmlReportPaths', "Android-SonarQube/gradle-multimodule-coverage/application/build/reports/jacoco/codeCoverageReport/codeCoverageReport.xml"
+            property 'sonar.coverage.jacoco.xmlReportPaths', "gradle-multimodule-coverage/application/build/reports/jacoco/codeCoverageReport/codeCoverageReport.xml"
         }
     }
 
@@ -26,7 +26,7 @@ subprojects {
     }
 }
 
-apply from: "Android-SonarQube/gradle-multimodule-coverage/sonar.gradle"
+apply from: "gradle-multimodule-coverage/sonar.gradle"
 
 // See here for more info: https://docs.gradle.org/6.4-rc-1/samples/sample_jvm_multi_project_with_code_coverage.html
 //
