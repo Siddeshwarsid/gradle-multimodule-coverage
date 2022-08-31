@@ -26,7 +26,11 @@ subprojects {
     }
 }
 
+<<<<<<< HEAD
 apply from: "$project.rootDir/sonar.gradle"
+=======
+apply from: "/sonar.gradle"
+>>>>>>> bf615c6497d1f21b3d113b86c9c3448e47acc663
 
 // See here for more info: https://docs.gradle.org/6.4-rc-1/samples/sample_jvm_multi_project_with_code_coverage.html
 //
